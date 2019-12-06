@@ -1,0 +1,22 @@
+h1{
+  color: black;
+  /* border: thin dotted purple */
+}
+li{
+  color: Darkblue;
+}
+
+b{
+  color: Maroon
+}
+
+#special{
+  color: maroon
+}
+.completed{
+  text-decoration: line-through;
+}
+body{
+  /* background: grey */
+  /* background-size:cover; */
+}
