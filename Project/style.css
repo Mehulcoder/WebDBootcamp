@@ -56,7 +56,9 @@ h2 {
 .content {
   margin-top: 140px;
 }
-
+.navbar scrolled{
+  background: rgb(222,192,222);
+}
 /* .navbar-custom{
   background-color: transparent;
 } */
