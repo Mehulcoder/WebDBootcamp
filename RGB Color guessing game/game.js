@@ -45,7 +45,7 @@ for (var i = 0; i < squares.length; i++) {
     console.log(clickedcolor);
     pickedcolor = (pickedcolor);
     if(clickedcolor == pickedcolor){
-      document.getElementById("try").innerHTML = "YOU WIN!!";
+      document.getElementById("try").innerHTML = "CORRECT!!";
       document.getElementById("try").style.backgroundColor = "";
 
       document.getElementsByTagName('h1')[0].style.backgroundColor=pickedcolor;
@@ -62,6 +62,7 @@ for (var i = 0; i < squares.length; i++) {
       var text = document.getElementById("try");
       text.innerHTML = "TRY AGAIN";
       this.style.backgroundColor = "#232323";
+      
       text.style.backgroundColor = "white";
     }
 

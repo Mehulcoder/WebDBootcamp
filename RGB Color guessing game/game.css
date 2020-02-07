@@ -20,6 +20,7 @@ h1 {
   line-height: 1.1;
   padding-top: 20px;
   padding-bottom: 20px;
+  transition: background 1s;
 }
 
 .butt {
@@ -43,6 +44,8 @@ button {
   margin: 0;
   padding: 0;
   color: steelblue;
+  transition: all .5s;
+  outline: none;
   /* padding-bottom: 9px; */
 }
 
@@ -51,6 +54,8 @@ button:hover {
   color: white;
   padding: 0;
   margin: 0;
+  border: none;
+  outline: none;
   /* padding-bottom: 9px; */
   /* height: 100%; */
   /* margin: 0; */
@@ -77,6 +82,7 @@ button:hover {
 #try {
   margin-left: 20px;
   margin-right: 5px;
+  font-weight: 750px;
 }
 
 .square {
@@ -88,6 +94,7 @@ button:hover {
   padding-top: 15%;
   padding-bottom: 15%;
   box-shadow: 4px 4px 5px;
+  transition: background .7s;
 }
 
 #cont {
