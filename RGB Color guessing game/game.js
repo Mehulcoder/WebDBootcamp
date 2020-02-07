@@ -21,8 +21,8 @@ console.log(colors);
 //Adding pickedcolor randomly
 var index = Math.floor(Math.random()*(6));
 var pickedcolor = colors[index];
-// console.log(pickedcolor);
-
+var star = document.getElementById('rgb');
+star.textContent = pickedcolor;
 var squares = document.querySelectorAll(".square");
 
 for (var i = 0; i < squares.length; i++) {
@@ -37,7 +37,6 @@ document.getElementById("five").style.backgroundColor = colors[4];
 document.getElementById("six").style.backgroundColor = colors[5];
 
 
-
 for (var i = 0; i < squares.length; i++) {
   squares[i].addEventListener("click", func);
 
@@ -46,16 +45,27 @@ for (var i = 0; i < squares.length; i++) {
     console.log(clickedcolor);
     pickedcolor = (pickedcolor);
     if(clickedcolor == pickedcolor){
-      document.getElementById("try").innerHTML = "You Win";
+      document.getElementById("try").innerHTML = "YOU WIN!!";
       document.getElementById("try").style.backgroundColor = "";
+
+      document.getElementsByTagName('h1')[0].style.backgroundColor=pickedcolor;
+
+      for (var j = 0; j < squares.length; j++) {
+        squares[j].style.backgroundColor = pickedcolor;
+      }
+
+    var check = document.getElementsByTagName("button")[0];
+    console.log(check);
+    check.textContent = "PLAY AGAIN";
+
     }else{
       var text = document.getElementById("try");
-      text.innerHTML = "Try Again"; 
+      text.innerHTML = "TRY AGAIN";
       this.style.backgroundColor = "#232323";
       text.style.backgroundColor = "white";
     }
 
-    document.getElementById("rgb").innerHTML = clickedcolor;
+    // document.getElementById("rgb").innerHTML = clickedcolor;
   }
 
 }

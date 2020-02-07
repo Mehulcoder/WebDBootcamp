@@ -5,18 +5,25 @@
   <meta charset="utf-8">
   <title>Color Game</title>
   <link rel="stylesheet" type="text/css" href="game.css">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+
 </head>
 
 <body>
-  <div class="header" >
-    <h1 style="color:#999966" align = "Center">The great</h1>;
-    <h1 style="color:#999966" align = "Center" id = "rgb"> RGB </h1>;
-    <h1 style="color:#999966" align = "Center">color game</h1>;
+
+
+  <h1 style="color:white" align="Center">The great
+    <br>
+    <span id="rgb">RGB</span>
+    <br>
+    color game</h1>
+
+
+  <!-- <p id="try"></p> -->
+  <div class="butt">
+    <span id="try" id = "spac"></span>
+    <button type="button" onClick="window.location.reload();" align="centre" id="spac">NEW COLORS</button>
   </div>
-
-  <p id="try"></p>
-
-  <button type="button" onClick="window.location.reload();">Try Again</button>
   <div id="cont">
     <div class="square" id="one"></div>
     <div class="square" id="two"></div>
@@ -26,11 +33,8 @@
     <div class="square" id="six"></div>
   </div>
 
-
-
-
-
   <script src="game.js" charset="utf-8" type="text/javascript"></script>
+
 </body>
 
 </html>
