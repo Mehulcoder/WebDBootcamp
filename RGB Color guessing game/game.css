@@ -8,6 +8,13 @@ body {
   height: 100%;
 }
 
+.header{
+  /* padding-top: 30px; */
+  /* padding-bottom: 30px; */
+  background-color:#66ccff;
+  height: 20%;
+}
+
 .square {
   height: 30%;
   width: 30%;
