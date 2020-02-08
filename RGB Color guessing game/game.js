@@ -10,9 +10,9 @@ function randomColor(){
   var a = Math.floor(Math.random()*256);
   var b = Math.floor(Math.random()*256);
   var c = Math.floor(Math.random()*256);
-
   return ("rgb("+a+", "+b+", "+c+")");
 }
+
 for (var i = 0; i < 6; i++) {
   colors[i] = randomColor();
 }
