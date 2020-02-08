@@ -6,11 +6,12 @@ var colors = [
   "rgb(255, 255, 255)",
   "rgb(255, 0, 255)"
 ];
-function randomColor(){
-  var a = Math.floor(Math.random()*256);
-  var b = Math.floor(Math.random()*256);
-  var c = Math.floor(Math.random()*256);
-  return ("rgb("+a+", "+b+", "+c+")");
+
+function randomColor() {
+  var a = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
+  var c = Math.floor(Math.random() * 256);
+  return ("rgb(" + a + ", " + b + ", " + c + ")");
 }
 
 for (var i = 0; i < 6; i++) {
@@ -19,7 +20,7 @@ for (var i = 0; i < 6; i++) {
 console.log(colors);
 
 //Adding pickedcolor randomly
-var index = Math.floor(Math.random()*(6));
+var index = Math.floor(Math.random() * (6));
 var pickedcolor = colors[index];
 var star = document.getElementById('rgb');
 star.textContent = pickedcolor;
@@ -44,25 +45,25 @@ for (var i = 0; i < squares.length; i++) {
     var clickedcolor = this.style.backgroundColor;
     console.log(clickedcolor);
     pickedcolor = (pickedcolor);
-    if(clickedcolor == pickedcolor){
+    if (clickedcolor == pickedcolor) {
       document.getElementById("try").innerHTML = "CORRECT!!";
       document.getElementById("try").style.backgroundColor = "";
 
-      document.getElementsByTagName('h1')[0].style.backgroundColor=pickedcolor;
+      document.getElementsByTagName('h1')[0].style.backgroundColor = pickedcolor;
 
       for (var j = 0; j < squares.length; j++) {
         squares[j].style.backgroundColor = pickedcolor;
       }
 
-    var check = document.getElementsByTagName("button")[0];
-    console.log(check);
-    check.textContent = "PLAY AGAIN";
+      var check = document.getElementsByTagName("button")[0];
+      console.log(check);
+      check.textContent = "PLAY AGAIN";
 
-    }else{
+    } else {
       var text = document.getElementById("try");
       text.innerHTML = "TRY AGAIN";
       this.style.backgroundColor = "#232323";
-      
+
       text.style.backgroundColor = "white";
     }
 
