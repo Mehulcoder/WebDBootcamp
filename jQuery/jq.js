@@ -4,3 +4,6 @@ if (jQuery) {
     alert("not");
 }
 
+$("h1").css("color", "purple");
+
+
