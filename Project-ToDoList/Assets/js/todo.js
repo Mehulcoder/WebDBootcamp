@@ -1,1 +1,6 @@
-alert("Hey there Nigguh");
+$("li").click(function (e) {
+    $(this).toggleClass("completed");
+    
+    
+
+});
