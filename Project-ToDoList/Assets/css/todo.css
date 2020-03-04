@@ -1,5 +1,5 @@
 body{
-    background-color:"";
+    background-color: lightslategray;
     /* align:centre; */
 }
 
@@ -15,6 +15,7 @@ li{
     height: 40px;
     line-height: 40px;
     color: #666;
+    padding: 0px 0px;
 
 }
 
@@ -31,10 +32,11 @@ input{
     width: 100%;
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
+    border-color:rgb(0,0,0,0);
 }
 
 li:nth-child(2n){
-    background-color: khaki ;
+    background-color:#f7f7f7 ;
 }
 
 h1{
@@ -44,14 +46,48 @@ h1{
     margin:0;
     padding: 10px 20px;
     font-weight: normal;
+    text-align: left;
+    /* float: left; */
 }
 ul{
     list-style: none;
-    padding: 10px 20px;
+    padding: 0;
     margin: 0;
 }
 
 .completed{
     color: gray;
     text-decoration: line-through;
+}
+
+
+
+.fa-plus{
+    float: right;
+}
+
+.fa-trash{
+    /* margin-right: 5px; */
+    padding: 5px;
+    display: inline-block;
+}
+
+span{
+    margin: 0;
+    height: 40px;
+    background: #e74c3c;
+    width: 40px;
+    margin-right: 20px;
+    color:rgb(0,0,0,0);
+    text-align: center  ;
+    width: 0;
+    display: inline-block;
+    transition-duration: 350ms;
+}
+span:nth-child(2n){
+    color: palevioletred;
+}
+li:hover span{
+    width: 40px;
+    color: white;
 }
