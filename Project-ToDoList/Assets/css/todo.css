@@ -1,5 +1,11 @@
 body{
-    background-color: lightslategray;
+    background-color: mediumturquoise;
+    transition: background-color 350ms;
+    font-family: 'Alegreya Sans SC';
+}
+
+input::placeholder {
+    font-family: 'Alegreya Sans SC';
 }
 
 #container{
@@ -7,6 +13,8 @@ body{
     margin-top: 100px;
     background-color: #f7f7f7;
     width: 360px;
+    box-shadow: 0 6px 6px -6px black;
+
 }
 
 li{
@@ -15,13 +23,14 @@ li{
     line-height: 40px;
     color: #666;
     padding: 0px 0px;
-
 }
 
 input:focus{
     background: white;
-    border: 3px solid;
+    border: 2px solid;
     outline: none;
+    transition-duration: 350ms;
+
 }
 
 input{
@@ -32,6 +41,9 @@ input{
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
     border-color:rgb(0,0,0,0);
+    transition-duration: 350ms;
+
+
 }
 
 li:nth-child(2n){

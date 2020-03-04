@@ -20,18 +20,15 @@ $("input:text").keypress(function (e) {
         var o = Math.round, r = Math.random, s = 255;
         var col = 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 
-        // $("html", "body").animate({
-        //     backgroundColor: col,
-        //     // margin:"100px"
-        // }, 1000);
+        $('body').css({
+            background: col        
+        });
 
-        $("body").css("background-color", col);
     }
 
 });
 
 $(".fa-plus").on("click", function () {
     $("input").fadeToggle();
-    // console.log();
 });
 
