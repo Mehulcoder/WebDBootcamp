@@ -2,6 +2,9 @@
 
 <% for( let i = 0; i < data["Search"].length; i++ ) { %>
     <li>
-        <%= data.Search[i].Title %> 
+        <%= data.Search[i].Title %> - <%= data.Search[i].Year %>  
     </li>
 <% } %>
+<br>
+
+<a href="/">Search again</a>
