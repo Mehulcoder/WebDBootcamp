@@ -9,8 +9,10 @@ app.get("/", function(req, res) {
 });
 
 // Getting the results according to the query
-app.get("/results", function (req, res) { 
+app.get("/results", function (req, res) {
+    //Take our query from the search bar (search.ejs)
     var query = req.query.search;
+    //Add our query to the url of the api
     var url = "http://omdbapi.com/?s="+query+"&apikey=thewdb";
 
     request(url, function (error, response, body) { 
