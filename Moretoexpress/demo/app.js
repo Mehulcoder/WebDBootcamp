@@ -1,16 +1,19 @@
 var express = require("express");
 var app = express();
 
+// Tell our code that the css file and JS file will be included in the public folder
 app.use(express.static("public"));
+//This will eliminate the need to use .ejs everytime
+app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-    res.render("home.ejs");
+    res.render("home");
     res.send("<h1>Welcome to the home page, nigguhs!</h1>");
 });
 
 app.get("/fallinlovewith/:thing", function (req, res) {  
     var thing = req.params.thing;
-    res.render("love.ejs", {ThingVar:thing});
+    res.render("love", {ThingVar:thing});
 });
 
 app.get("/posts", function (req, res) { 

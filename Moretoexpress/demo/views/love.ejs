@@ -1,3 +1,8 @@
+<!-- This will automatically include the header from the given path -->
+<%- include("partials/header")%> 
+
+<!-- Main body or the changing code starts from here -->
+
 <h1>You fell in love with <%= ThingVar %> </h1>
 
 <% if (ThingVar.toLowerCase() === "mehul") { %>
@@ -5,4 +10,11 @@
 <% }else{ %>
     <p>Bad choice! You should have said Mehul!</p>
 <% } %> 
+
+<!-- Main body or the changing code ends here -->
+
+
+<!-- This will automatically include the footer from the given path -->
+<%- include("partials/footer")%> 
+
 
