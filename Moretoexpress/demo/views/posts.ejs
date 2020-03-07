@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="app.css">
+
+<h1>Welcome to the posts page </h1>
+
+<% for( let i = 0; i < posts.length; i++ ) { %>
+    <li><%=  posts[i].Title  %> - <%= posts[i].Author %> </li>
+<% } %>

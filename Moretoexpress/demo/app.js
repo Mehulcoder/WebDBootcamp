@@ -1,6 +1,8 @@
 var express = require("express");
 var app = express();
 
+app.use(express.static("public"));
+
 app.get("/", function(req, res) {
     res.render("home.ejs");
     res.send("<h1>Welcome to the home page, nigguhs!</h1>");
@@ -15,9 +17,9 @@ app.get("/posts", function (req, res) {
     var posts = [
         {Title:"Post 1", Author:"Susy"},
         {Title:"Post 2", Author:"Mehul"},
-        {Title:"Post 1", Author:"Chirag"}
+        {Title:"Post 3", Author:"Chirag"}
     ]; 
-    res.render("posts.ejs");
+    res.render("posts.ejs", {posts:posts});
 });
 
 app.listen(3000, function(){
