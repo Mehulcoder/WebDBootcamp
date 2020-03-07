@@ -8,8 +8,16 @@ app.get("/", function(req, res) {
 
 app.get("/fallinlovewith/:thing", function (req, res) {  
     var thing = req.params.thing;
+    res.render("love.ejs", {ThingVar:thing});
+});
 
-    res.send("You fell in love with "+thing);
+app.get("/posts", function (req, res) { 
+    var posts = [
+        {Title:"Post 1", Author:"Susy"},
+        {Title:"Post 2", Author:"Mehul"},
+        {Title:"Post 1", Author:"Chirag"}
+    ]; 
+    res.render("posts.ejs");
 });
 
 app.listen(3000, function(){
